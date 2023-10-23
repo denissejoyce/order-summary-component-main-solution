@@ -1,7 +1,28 @@
 * {
     border: 0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.btn-payment {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+}
+
+.card {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    height: 525px;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.card-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
 }
 
 .sr-only {
@@ -16,5 +37,45 @@
     width: 1px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+body {
+    background: url("images/pattern-background-desktop-1440w.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+
+    text-align: center;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background: url("images/pattern-background-mobile-375w.svg");
+        background-color: hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        max-width: 335px;
+    }
+    
+}
+
+.attribution { 
+    bottom: 10%;
+    font-size: 11px; 
+    position: absolute;
+    text-align: center; 
+}
 .attribution a { color: hsl(228, 45%, 44%); }
