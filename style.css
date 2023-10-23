@@ -5,18 +5,67 @@
     padding: 0;
 }
 
+.annual-plan {
+    background-color: hsl(225, 100%, 94%, 0.4);
+    border-radius: 10px;
+    display: flex;
+    margin: 20px 40px;
+    padding: 10px;
+}
+
+.annual-plan a {
+    color: hsl(245, 75%, 52%); /* bright blue */
+    text-decoration: underline;
+}
+
+.annual-plan a:hover {
+    opacity: 75%;
+}
+
+.annual-plan #annual-plan-info {
+    color: hsl(223, 47%, 23%);
+}
+
+.btn-cancel {
+    color: hsl(224, 23%, 55%);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
 .btn-payment {
     background-color: hsl(245, 75%, 52%);
-    color: hsl(225, 100%, 98%);
+    box-shadow: 1px 8px 30px -7px hsl(220, 15%, 55%);
+    border-radius: 10px;
+    color: hsl(225, 100%, 98%); /* very pale blue */
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 12px 100px;
+}
+
+.btn-payment:hover {
+    opacity: 75%;
 }
 
 .card {
-    background-color: hsl(225, 100%, 98%);
+    background-color: hsl(225, 100%, 98%); /* very pale blue */
+    box-shadow: 1px 1px 40px -15px hsl(220, 15%, 55%);
     border-radius: 12px;
-    height: 525px;
+    height: 550px;
     width: 100%;
     max-width: 400px;
     
+}
+
+.card h2 {
+    color: hsl(223, 47%, 23%);
+    padding-top: 30px;
+}
+
+.card p {
+    padding: 20px 20px 10px 20px;
 }
 
 .card-img {
@@ -41,9 +90,9 @@ body {
     background: url("images/pattern-background-desktop-1440w.svg");
     background-color: hsl(225, 100%, 94%);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
-    color: hsl(223, 47%, 23%);
+    color: hsl(224, 23%, 55%); /* desaturated blue */
     font-family: 'Red Hat Display', sans-serif;
 
     text-align: center;
@@ -59,7 +108,7 @@ main {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
     body {
         background: url("images/pattern-background-mobile-375w.svg");
         background-color: hsl(225, 100%, 94%);
@@ -75,6 +124,7 @@ main {
 .attribution { 
     bottom: 10%;
     font-size: 11px; 
+    left: 41.5%;
     position: absolute;
     text-align: center; 
 }
