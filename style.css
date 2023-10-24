@@ -14,7 +14,7 @@
 }
 
 .annual-plan a {
-    color: hsl(245, 75%, 52%); /* bright blue */
+    color: hsl(245, 75%, 52%); 
     text-decoration: underline;
 }
 
@@ -40,7 +40,8 @@
     background-color: hsl(245, 75%, 52%);
     box-shadow: 1px 8px 30px -7px hsl(220, 15%, 55%);
     border-radius: 10px;
-    color: hsl(225, 100%, 98%); /* very pale blue */
+    color: hsl(225, 100%, 98%); 
+    cursor: pointer;
     font-family: 'Red Hat Display', sans-serif;
     padding: 12px 100px;
 }
@@ -50,7 +51,7 @@
 }
 
 .card {
-    background-color: hsl(225, 100%, 98%); /* very pale blue */
+    background-color: hsl(225, 100%, 98%); 
     box-shadow: 1px 1px 40px -15px hsl(220, 15%, 55%);
     border-radius: 12px;
     height: 550px;
@@ -92,7 +93,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 
-    color: hsl(224, 23%, 55%); /* desaturated blue */
+    color: hsl(224, 23%, 55%); 
     font-family: 'Red Hat Display', sans-serif;
 
     text-align: center;
@@ -113,12 +114,20 @@ main {
         background: url("images/pattern-background-mobile-375w.svg");
         background-color: hsl(225, 100%, 94%);
         background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .card {
         max-width: 335px;
     }
     
+}
+
+@media (max-width: 296px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
 }
 
 .attribution { 
