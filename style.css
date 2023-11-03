@@ -16,7 +16,8 @@
 }
 
 .annual-plan a {
-    color: hsl(245, 75%, 52%); 
+    color: hsl(245, 75%, 52%);
+    font-size: 14px; 
     font-weight: 700;
     text-decoration: underline;
 }
@@ -148,11 +149,14 @@ p {
 
     .btn-payment {
         padding: 12px 60px;
-       
+    }
+
+    .btn-payment, .btn-cancel {
+        font-size: 14px;
     }
 
     .card {
-        max-width: 335px;
+        max-width: 330px;
     }
 
     .card p {
