@@ -3,14 +3,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
 .annual-plan {
+    align-items: center;
     background-color: hsl(225, 100%, 94%, 0.4);
     border-radius: 10px;
     display: flex;
     margin: 20px 40px;
-    padding: 10px;
+    padding: 15px 10px;
 }
 
 .annual-plan a {
@@ -26,6 +28,18 @@
 .annual-plan #annual-plan-info {
     color: hsl(223, 47%, 23%);
     font-weight: 700;
+}
+
+.annual-plan img {
+    padding-left: 10px;
+}
+
+.annual-plan-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px 0 25px;
 }
 
 .btn-cancel {
@@ -49,7 +63,7 @@
     font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    padding: 12px 100px;
+    padding: 12px 80px;
 }
 
 .btn-payment:hover {
@@ -60,11 +74,9 @@
     background-color: hsl(225, 100%, 98%); 
     box-shadow: 1px 1px 40px -15px hsl(220, 15%, 55%);
     border-radius: 12px;
-    height: 560px;
+    height: 600px;
     width: 100%;
     max-width: 400px;
-    transition: all 0.3s ease;
-    
 }
 
 .card h2 {
@@ -130,7 +142,8 @@ p {
     }
 
     .btn-payment {
-        padding: 12px 70px;
+        padding: 12px 60px;
+       
     }
 
     .card {
