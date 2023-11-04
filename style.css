@@ -147,12 +147,16 @@ p {
         margin-right: 30px;
     }
 
-    .btn-payment {
-        padding: 12px 60px;
+    .annual-plan a {
+        font-size: 12px;
     }
 
-    .btn-payment, .btn-cancel {
-        font-size: 14px;
+    .annual-plan-container {
+        padding: 0 30px 0 20px;
+    }
+
+    .btn-payment {
+        padding: 12px 60px;
     }
 
     .card {
